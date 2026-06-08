@@ -46,7 +46,7 @@ function ClientesList() {
     </button>
 
   </h2>
-    <table className="table table-striped rows">
+    <table className="table table-striped rows dark">
       <thead>
         <tr>
           <th>Código</th>
@@ -64,21 +64,29 @@ function ClientesList() {
         <td>Julio Pinho </td>
         <td>Lisboa</td>
         <td>185763224</td>
-        <td><button className=""><i className="fas fa-pencil-alt"></i> </button></td>
+        <td><button className="btn btn-dark mr-1"> <i className="fa fa-eye"></i></button></td>
+        <td> <button className="btn btn-dark mr-1"><i className="fa fa-pencil"></i>
+                </button></td>
+                <td> <button className="btn btn-dark mr-1"> <i className="fa fa-trash"></i>   </button></td>
       </tr>
       <tr>
         <td>2</td>
         <td>Barros Silva</td>
         <td>Madeira</td>
         <td>785429675</td>
-        <td><i class='fas fa-pencil-alt'></i></td>
+        <td><button className="btn btn-dark mr-1"> <i className="fa fa-eye"></i></button></td>
+           <td> <button className="btn btn-dark mr-1"><i className="fa fa-pencil"></i>
+                </button></td>
+                <td> <button className="btn btn-dark mr-1"> <i className="fa fa-trash"></i>   </button></td>
       </tr>
       <tr>
         <td>3</td>
         <td>Maria Juhana</td>
         <td>Leiria</td>
         <td>754863214</td>
-        <td><i class='fas fa-pencil-alt'></i></td>
+        <td><button className="btn btn-dark mr-1"> <i className="fa fa-eye"></i></button></td>
+           <td> <button className="btn btn-dark mr-1"><i className="fa fa-pencil"></i></button></td>
+           <td> <button className="btn btn-dark mr-1"> <i className="fa fa-trash"></i>   </button></td>
       </tr>
     </table>
 
