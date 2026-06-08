@@ -32,7 +32,57 @@ function Inicio() {
   </div>);
 }
 function ClientesList() {
-  return (<h2>Página de Clientes</h2>);
+  return (<h2>Clientes
+
+        <button className="btn btn-gradient text-left float-right">
+    <i className="fa fa-plus"></i> 
+    Atualizar
+      </button>
+
+  <button className="btn btn-dark text-left float-right">
+    <i className="fa fa-plus"></i> 
+    Novo Cliente
+      </button>
+
+
+      <table className="table table-striped rows">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Morada</th>
+            <th>NIF</th>
+            <th>Opcões</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* Aqui serão listados os clientes */}
+        </tbody>
+        <tr>
+            <td>1</td>
+            <td>Julio Pinho </td>
+            <td>Lisboa</td>
+            <td>185763224</td>
+            <td><i class='fas fa-pencil-alt'></i></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Barros Silva</td>
+            <td>Madeira</td>
+            <td>785429675</td>
+            <td><i class='fas fa-pencil-alt'></i></td>
+        </tr>
+                <tr>
+            <td>3</td>
+            <td>Maria Juhana</td>
+            <td>Leiria</td>
+            <td>754863214</td>
+            <td><i class='fas fa-pencil-alt'></i></td>
+        </tr>
+      </table>
+
+  
+      </h2>);
 }
 function VeiculosList() {
   return (<h2>Página de Veículos</h2>);
