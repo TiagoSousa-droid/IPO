@@ -20,6 +20,7 @@ function App() {
           <Route path="/veiculos" element={<VeiculosList />} />
           <Route path="/inspecoes" element={<InspecoesList />} />
         </Routes>
+
       </div>
     </div>
   );
@@ -32,57 +33,59 @@ function Inicio() {
   </div>);
 }
 function ClientesList() {
-  return (<h2>Clientes
+  return (<div><h2>Clientes
 
-        <button className="btn btn-gradient text-left float-right">
-    <i className="fa fa-plus"></i> 
-    Atualizar
-      </button>
+    <button className="btn btn-gradient text-left float-right">
+      <i className="fa fa-plus"></i>
+      Atualizar
+    </button>
 
-  <button className="btn btn-dark text-left float-right">
-    <i className="fa fa-plus"></i> 
-    Novo Cliente
-      </button>
+    <button className="btn btn-dark text-left float-right">
+      <i className="fa fa-plus"></i>
+      Novo Cliente
+    </button>
 
-
-      <table className="table table-striped rows">
-        <thead>
-          <tr>
-            <th>Código</th>
-            <th>Nome</th>
-            <th>Morada</th>
-            <th>NIF</th>
-            <th>Opcões</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* Aqui serão listados os clientes */}
-        </tbody>
+  </h2>
+    <table className="table table-striped rows">
+      <thead>
         <tr>
-            <td>1</td>
-            <td>Julio Pinho </td>
-            <td>Lisboa</td>
-            <td>185763224</td>
-            <td><i class='fas fa-pencil-alt'></i></td>
+          <th>Código</th>
+          <th>Nome</th>
+          <th>Morada</th>
+          <th>NIF</th>
+          <th>Opcões</th>
         </tr>
-        <tr>
-            <td>2</td>
-            <td>Barros Silva</td>
-            <td>Madeira</td>
-            <td>785429675</td>
-            <td><i class='fas fa-pencil-alt'></i></td>
-        </tr>
-                <tr>
-            <td>3</td>
-            <td>Maria Juhana</td>
-            <td>Leiria</td>
-            <td>754863214</td>
-            <td><i class='fas fa-pencil-alt'></i></td>
-        </tr>
-      </table>
+      </thead>
+      <tbody>
+        {/* Aqui serão listados os clientes */}
+      </tbody>
+      <tr>
+        <td>1</td>
+        <td>Julio Pinho </td>
+        <td>Lisboa</td>
+        <td>185763224</td>
+        <td><button className=""><i className="fas fa-pencil-alt"></i> </button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Barros Silva</td>
+        <td>Madeira</td>
+        <td>785429675</td>
+        <td><i class='fas fa-pencil-alt'></i></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Maria Juhana</td>
+        <td>Leiria</td>
+        <td>754863214</td>
+        <td><i class='fas fa-pencil-alt'></i></td>
+      </tr>
+    </table>
 
-  
-      </h2>);
+  </div>
+
+
+  );
 }
 function VeiculosList() {
   return (<h2>Página de Veículos</h2>);
