@@ -71,7 +71,7 @@ function ClientesList() {
 
   const confirmDelete = async (id) => {
     try {
-      const response = await fetch(API_BASE + '/clientes/' + id, { method: 'DELETE' });
+      const response = awaitfetch(API_BASE + '/clientes/' + id, { method: 'DELETE' });
       const data = await response.json();
       if (data.success) {
         fetchData();
@@ -141,8 +141,12 @@ function ClientesList() {
               <td>{cliente.morada}</td>
               <td>{cliente.nif}</td>
               <td style={{ whiteSpace: 'nowrap' }}>
-                <button className="btn btn-dark btn-sm mr-2" ><i className='fa fa-eye' aria-hidden='true'></i></button>
-                <button className="btn btn-dark btn-sm mr-2" ><i className='fa fa-pencil' aria-hidden='true'></i></button>
+                <button className="btn btn-dark btn-sm mr-2" onClick={() => navigate(`/clientes/read/${cliente.codcli}`)}>
+                  <i className='fa fa-eye' aria-hidden='true'></i>
+                </button>
+                <button className="btn btn-dark btn-sm mr-2" onClick={() => navigate(`/clientes/update/${cliente.codcli}`)}>
+                  <i className='fa fa-pencil' aria-hidden='true'></i>
+                </button>
                 <button className="btn btn-dark btn-sm" onClick={() => openDeleteModal(cliente.codcli)}>
                   <i className='fa fa-trash' aria-hidden='true'></i>
                 </button>
